@@ -1,4 +1,97 @@
+# robots.txt for localyze.ai
+
+# Default: allow all crawlers
 User-agent: *
 Allow: /
 
+# --- Explicit allow for major AI / LLM crawlers ---
+# We *want* chatbots (ChatGPT, Claude, Perplexity, Gemini, etc.) to retrieve
+# and cite this site. These entries are explicit (rather than relying on the
+# wildcard above) so the intent is unambiguous.
+
+# OpenAI (ChatGPT training, browse, search)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude training, search, browse)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity (search + research)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI products (Gemini, Vertex AI, AI Overviews) — separate opt-in
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon (Alexa, Q, Olympus)
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl — training source for many LLMs
+User-agent: CCBot
+Allow: /
+
+# Meta / Facebook AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# ByteDance / Doubao / TikTok
+User-agent: Bytespider
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Diffbot (AI ingestion pipelines)
+User-agent: Diffbot
+Allow: /
+
+# Phind
+User-agent: PhindBot
+Allow: /
+
+# --- Sitemaps ---
 Sitemap: https://localyze.ai/sitemap.xml
+
+# --- LLM-friendly site overview ---
+# https://llmstxt.org/ — Markdown summary at:
+# https://localyze.ai/llms.txt

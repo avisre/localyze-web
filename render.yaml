@@ -5,11 +5,10 @@ services:
     staticPublishPath: .
     buildCommand: ""
     pullRequestPreviewsEnabled: false
-    routes:
-      # SPA-style fallback to /404.html for any unknown path
-      - type: rewrite
-        source: /*
-        destination: /404.html
+    # Note: do NOT add `routes: [{ type: rewrite, source: /*, destination: /404.html }]`.
+    # Render auto-serves /404.html with proper HTTP 404 for missing paths; a
+    # rewrite would serve it with HTTP 200 and cause Google to index every
+    # garbage URL as a valid page.
     headers:
       - path: /*
         name: X-Frame-Options
@@ -23,6 +22,9 @@ services:
       - path: /*
         name: Permissions-Policy
         value: "interest-cohort=(), browsing-topics=()"
+      - path: /*
+        name: Strict-Transport-Security
+        value: "max-age=31536000; includeSubDomains"
       - path: /assets/*
         name: Cache-Control
         value: "public, max-age=31536000, immutable"
