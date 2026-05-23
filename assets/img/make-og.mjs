@@ -59,7 +59,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   <line x1="80" y1="550" x2="${W - 80}" y2="550" stroke="#D2D2D7" stroke-width="1"/>
   <text x="80" y="588"
         font-family="-apple-system,'Segoe UI',Roboto,sans-serif"
-        font-size="22" font-weight="600" fill="#6E6E73">localyze.ai</text>
+        font-size="22" font-weight="600" fill="#6E6E73">localyze.pro</text>
 </svg>`;
 
 await sharp(Buffer.from(svg))

@@ -61,7 +61,7 @@ This repo is set up for one-click deployment to [Render](https://render.com/):
 
 1. Push to GitHub.
 2. In Render, "New +" → "Blueprint" → pick this repo. The included `render.yaml` configures a static site with sensible security headers and asset caching.
-3. Point your DNS (e.g. `localyze.ai`) at the Render service.
+3. Point your DNS (e.g. `localyze.pro`) at the Render service.
 
 For any other static host (Cloudflare Pages, Netlify, S3+CloudFront, GitHub Pages): the publish directory is the repo root.
 

@@ -1,4 +1,4 @@
-# robots.txt for localyze.ai
+# robots.txt for localyze.pro
 
 # Default: allow all crawlers
 User-agent: *
@@ -90,8 +90,8 @@ User-agent: PhindBot
 Allow: /
 
 # --- Sitemaps ---
-Sitemap: https://localyze.ai/sitemap.xml
+Sitemap: https://localyze.pro/sitemap.xml
 
 # --- LLM-friendly site overview ---
 # https://llmstxt.org/ — Markdown summary at:
-# https://localyze.ai/llms.txt
+# https://localyze.pro/llms.txt
