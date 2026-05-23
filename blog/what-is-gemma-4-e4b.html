@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>What is Gemma 4 E4B? Google's local AI model explained — Localyze.ai</title>
-<meta name="description" content="Gemma 4 E4B explained: what the name means, why effective 4B parameters matter, what hardware runs it, and why an open-weight model belongs on your device." />
-<meta name="keywords" content="Gemma 4 E4B explained, Google Gemma local model, how Gemma runs offline, open weights LLM, on-device model" />
+<title>What is Gemma 3n E4B? Google's local AI model explained — Localyze.ai</title>
+<meta name="description" content="Gemma 3n E4B explained: what the name means, why effective 4B parameters matter, what hardware runs it, and why an open-weight model belongs on your device." />
+<meta name="keywords" content="Gemma 3n E4B explained, Google Gemma local model, how Gemma runs offline, open weights LLM, on-device model" />
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
 <meta name="author" content="Localyze.ai" />
@@ -14,14 +14,14 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Localyze.ai" />
-<meta property="og:title" content="What is Gemma 4 E4B?" />
+<meta property="og:title" content="What is Gemma 3n E4B?" />
 <meta property="og:description" content="Google's open local AI model, explained. Naming, hardware, and why open weights matter." />
 <meta property="og:url" content="https://localyze.pro/blog/what-is-gemma-4-e4b.html" />
 <meta property="og:image" content="https://localyze.pro/assets/img/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="What is Gemma 4 E4B?" />
+<meta name="twitter:title" content="What is Gemma 3n E4B?" />
 <meta name="twitter:description" content="Google's open model that runs on a phone, explained." />
 <meta name="twitter:image" content="https://localyze.pro/assets/img/og-image.png" />
 
@@ -39,8 +39,8 @@
 {
   "@context":"https://schema.org",
   "@type":"BlogPosting",
-  "headline":"What is Gemma 4 E4B?",
-  "description":"Google's open Gemma 4 E4B model, explained: what the name means, hardware needs, and why open weights matter for on-device AI.",
+  "headline":"What is Gemma 3n E4B?",
+  "description":"Google's open Gemma 3n E4B model, explained: what the name means, hardware needs, and why open weights matter for on-device AI.",
   "datePublished":"2026-05-19",
   "dateModified":"2026-05-19",
   "author":{"@type":"Organization","name":"Localyze.ai","url":"https://localyze.pro"},
@@ -74,16 +74,16 @@
 
 <main id="main" class="doc">
 
-  <h1>What is Gemma 4 E4B?</h1>
+  <h1>What is Gemma 3n E4B?</h1>
   <p><em>Google's open model that's small enough to run on a phone, capable enough to feel like a real assistant.</em></p>
   <p class="muted" style="font-size:0.9rem;">May 19, 2026 · 4 min read</p>
 
   <h2>The name, decoded</h2>
-  <p><code>Gemma 4 E4B</code> looks cryptic but reads cleanly once you split it. <em>Gemma</em> is Google DeepMind's family of open-weight models. <em>4</em> is the generation. <em>E4B</em> means <strong>effective 4 billion parameters</strong> — the model behaves like a 4B at inference time while using architectural tricks (sparse activation, smarter attention) to punch above that weight.</p>
+  <p><code>Gemma 3n E4B</code> looks cryptic but reads cleanly once you split it. <em>Gemma</em> is Google DeepMind's family of open-weight models. <em>4</em> is the generation. <em>E4B</em> means <strong>effective 4 billion parameters</strong> — the model behaves like a 4B at inference time while using architectural tricks (sparse activation, smarter attention) to punch above that weight.</p>
   <p>The "effective" matters. A traditional 4B model and an E4B model use roughly the same memory and compute, but the E4B variant produces noticeably better answers because not every parameter is active on every token.</p>
 
   <h2>Why open weights matter</h2>
-  <p>Most of the well-known assistants — ChatGPT, Gemini, Copilot — run closed models you can only access through someone's API. Gemma 4 E4B is published under an open licence: the weights file is downloadable, inspectable, and runnable on your own hardware.</p>
+  <p>Most of the well-known assistants — ChatGPT, Gemini, Copilot — run closed models you can only access through someone's API. Gemma 3n E4B is published under an open licence: the weights file is downloadable, inspectable, and runnable on your own hardware.</p>
   <p>That changes three things at once:</p>
   <ul>
     <li><strong>Portability.</strong> The same weights run on Android, Windows, macOS, and Linux.</li>
@@ -92,7 +92,7 @@
   </ul>
 
   <h2>How it runs on real hardware</h2>
-  <p>A raw 4B-parameter model in full precision is several gigabytes and slow on consumer chips. To make it phone-sized, the weights are quantised to <code>INT4</code> — four bits per parameter. The file shrinks to roughly 3.6 GB and inference speed roughly doubles, with a small quality cost most people won't notice in chat.</p>
+  <p>A raw 4B-parameter model in full precision is several gigabytes and slow on consumer chips. To make it phone-sized, the weights are quantised to <code>INT4</code> — four bits per parameter. The file shrinks to roughly ~4 GB and inference speed roughly doubles, with a small quality cost most people won't notice in chat.</p>
   <p>Each platform uses its native acceleration stack:</p>
   <ul>
     <li><strong>Android</strong> — vendor NNAPI / GPU delegates via TensorFlow Lite.</li>
@@ -110,7 +110,7 @@
   <p>Disk: about 4 GB for the model and runtime. Network: only for the one-time download.</p>
 
   <h2>What it can and can't do</h2>
-  <p>Gemma 4 E4B is strong at the things you do most: drafting, summarising, explaining, rewriting, basic coding help, reading text in screenshots. It will not replace a frontier 400B model for novel research or massive context windows.</p>
+  <p>Gemma 3n E4B is strong at the things you do most: drafting, summarising, explaining, rewriting, basic coding help, reading text in screenshots. It will not replace a frontier 400B model for novel research or massive context windows.</p>
   <p>For day-to-day assistant work, the gap is smaller than the marketing implies — and the model is yours, on your device, forever.</p>
 
   <hr style="margin:48px 0 32px;border:none;border-top:1px solid var(--border);" />

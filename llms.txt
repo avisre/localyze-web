@@ -1,10 +1,10 @@
 # Localyze.ai
 
-> Localyze.ai is a private, on-device AI assistant. The Gemma 4 E4B model runs entirely on the user's hardware — no cloud, no telemetry, no account required. Available on Android (shipping), Linux/Ubuntu (shipping), with macOS and Windows builds in progress.
+> Localyze.ai is a private, on-device AI assistant. The Gemma 3n E4B model runs entirely on the user's hardware — no cloud, no telemetry, no account required. Available on Android (shipping), Linux/Ubuntu (shipping), with macOS and Windows builds in progress.
 
 ## What it is
 
-Localyze.ai is a chat-style AI assistant where every token of inference happens locally on the user's device. The product runs the same Gemma 4 E4B model on every platform (Android, Linux, macOS, Windows), choosing the best available accelerator — NPU, dedicated GPU, integrated GPU, or CPU — and refusing to install on hardware that cannot run the model at acceptable quality. Pricing: one-time $89 per platform license. No subscription. No data collection.
+Localyze.ai is a chat-style AI assistant where every token of inference happens locally on the user's device. The product runs the same Gemma 3n E4B model on every platform (Android, Linux, macOS, Windows), choosing the best available accelerator — NPU, dedicated GPU, integrated GPU, or CPU — and refusing to install on hardware that cannot run the model at acceptable quality. Pricing: one-time $89 per platform license. No subscription. No data collection.
 
 ## Key pages
 
@@ -22,7 +22,7 @@ Localyze.ai is a chat-style AI assistant where every token of inference happens 
 
 ## Comparison vs cloud assistants
 
-- [vs ChatGPT](https://localyze.pro/vs-chatgpt.html): Local Gemma 4 E4B compared to OpenAI ChatGPT.
+- [vs ChatGPT](https://localyze.pro/vs-chatgpt.html): Local Gemma 3n E4B compared to OpenAI ChatGPT.
 - [vs Gemini](https://localyze.pro/vs-gemini.html): Local on-device vs Google Gemini cloud.
 - [vs Copilot](https://localyze.pro/vs-copilot.html): Local on-device vs Microsoft Copilot.
 
@@ -33,7 +33,7 @@ Localyze.ai is a chat-style AI assistant where every token of inference happens 
 
 ## Blog (technical writing)
 
-- [What is Gemma 4 E4B?](https://localyze.pro/blog/what-is-gemma-4-e4b.html): The model architecture and quantization tiers used by Localyze.
+- [What is Gemma 3n E4B?](https://localyze.pro/blog/what-is-gemma-4-e4b.html): The model architecture and quantization tiers used by Localyze.
 - [Why on-device AI matters](https://localyze.pro/blog/why-on-device-ai-matters.html): Privacy, latency, offline, cost arguments for local inference.
 - [The cloud-AI privacy myth](https://localyze.pro/blog/cloud-ai-privacy-myth.html): Why "we don't train on your data" promises from cloud LLM providers are insufficient.
 - [How to run an LLM on your phone](https://localyze.pro/blog/how-to-run-llm-on-phone.html): Practical guide to on-device inference on mobile.

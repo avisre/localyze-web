@@ -51,7 +51,7 @@ function phoneChat() {
     ${rect(0, 110, W, 200, { fill: T.surface })}
     <rect x="60" y="160" width="100" height="100" rx="22" fill="${T.soft}"/>
     ${text(190, 220, "Localyze.ai", { size: 50, weight: 800 })}
-    ${text(190, 270, "On-device · Gemma 4 E4B", { size: 26, fill: T.muted })}
+    ${text(190, 270, "On-device · Gemma 3n E4B", { size: 26, fill: T.muted })}
     <circle cx="${W - 110}" cy="210" r="50" fill="${T.soft}"/>
     ${text(W - 110, 226, "+", { size: 56, weight: 600, fill: T.primary, anchor: "middle" })}
     <!-- offline pill -->
@@ -221,7 +221,7 @@ function desktopChat() {
     ${text(sb + 120, 200, "Project Atlas — kickoff", { size: 34, weight: 700 })}
     <rect x="${W - 540}" y="160" width="450" height="60" rx="30" fill="${T.soft}"/>
     <circle cx="${W - 510}" cy="190" r="8" fill="${T.primary}"/>
-    ${text(W - 480, 200, "Model: Gemma 4 E4B (on-device)", { size: 22, weight: 700, fill: T.primary })}
+    ${text(W - 480, 200, "Model: Gemma 3n E4B (on-device)", { size: 22, weight: 700, fill: T.primary })}
 
     <!-- bubbles -->
     <rect x="${sb + 120}" y="320" width="900" height="240" rx="24" fill="#F5F5F7"/>
@@ -276,7 +276,7 @@ function desktopSettings() {
 
     ${sectionTitle(360, "MODEL")}
     <rect x="${sb + 120}" y="390" width="${W - sb - 240}" height="240" rx="24" fill="${T.surface}" stroke="${T.hairline}"/>
-    ${row(410, "Engine", "Gemma 4 E4B")}
+    ${row(410, "Engine", "Gemma 3n E4B")}
     ${row(490, "Context window", "32k tokens")}
     ${row(570, "Precision", "INT4")}
 
